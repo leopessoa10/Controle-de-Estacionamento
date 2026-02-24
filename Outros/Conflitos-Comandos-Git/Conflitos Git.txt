@@ -1,0 +1,16 @@
+1- git add .
+2- git status
+3- git commit -m ""
+4- git push
+Mensagem de erro de conflito
+
+5- git pull
+5.1 - (se não entrar na tela azul)
+5.1.1 - git commit -m ""
+5.1.2 - git push
+
+5.2 - (se der tela azul)
+5.2.1 - Pressionar a tecla ESC
+5.2.2 - Digitar ":wq"
+5.2.3 - Pressionar Enter
+5.2.4 - git push

@@ -1,0 +1,245 @@
+.vagas-container{
+  background-color: white;
+}
+
+/* Estilos para os cards de vaga */
+.vaga-card {
+  border-radius: 10px;
+  padding: 20px;
+  padding-bottom: 0rem; /* Espaço para os ícones de ação */
+  margin: 10px;
+  margin-bottom: 1.7rem; /* Espaço entre widgets das vagas */
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  width: 9.375rem; /* Largura fixa para os cards (150px) */
+  display: inline-block; /* Para que os cards fiquem lado a lado */
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  /*box-shadow: 2px 2px 5px rgba(0,0,0,0.2);*/
+  position: relative; /* Para posicionamento dos ícones */
+  min-height: 9.375rem; /* Altura mínima para o card (120px) */
+  height: 10.2rem; /* Altura fixa para o card (162.3px) */
+  max-height: 10.2rem; /* Altura máxima para o card (162.3px) */
+  vertical-align: top; /* Alinha os cards ao topo */
+}
+.vaga-card:hover {
+    /*box-shadow: 4px 4px 10px rgba(0,0,0,0.3); /* Sombra mais intensa ao passar o mouse */
+    transform: scale(1.02); /* Leve aumento de tamanho ao passar o mouse */
+}
+
+.vaga-card.inativa {
+    background-color: rgba(0, 0, 0, 1); /* Verde claro */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+    /*background-color: rgba(128, 128, 128, 1); /* Cinza */
+    /* Hexadecimal: #808080 / RGBA: rgba(128, 128, 128, 1) */
+}
+    .vaga-card.inativa .vaga-status {
+        color: rgba(128, 128, 128, 1) !important;
+    }
+        .vaga-card.inativa:hover {
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 1); /* Sombra mais intensa ao passar o mouse */
+        }
+
+.vaga-card.livre {
+    background-color: rgba(0, 0, 0, 1); /* Verde claro */
+    box-shadow: 0px 0px 10px rgba(144, 238, 144, 1);
+    /*background-color: rgba(144, 238, 144, 1); /* Verde claro */
+    /* Hexadecimal: #90EE90 / RGBA: rgba(144, 238, 144, 1) */
+}
+    .vaga-card.livre .vaga-status {
+        color: rgba(144, 238, 144, 1) !important;
+    }
+        .vaga-card.livre:hover {
+            box-shadow: 0px 0px 10px rgba(144, 238, 144, 1); /* Sombra mais intensa ao passar o mouse */
+        }
+
+.vaga-card.ocupada {
+    background-color: rgba(0, 0, 0, 1); /* Verde claro */
+    box-shadow: 0px 0px 10px rgba(220, 20, 60, 1);
+    /*background-color: rgba(220, 20, 60, 1); /* Vermelho */
+    /* Hexadecimal: #DC143C / RGBA: rgba(220, 20, 60, 1) */
+}
+    .vaga-card.ocupada .vaga-status {
+        color: rgba(220, 20, 60, 1) !important;
+    }
+        .vaga-card.ocupada:hover {
+            box-shadow: 0px 0px 10px rgba(220, 20, 60, 1); /* Sombra mais intensa ao passar o mouse */
+        }
+
+.vaga-card .vaga-id {
+    font-size: 1em;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    word-break: break-word;
+
+    padding:  0px 0px;
+    padding-inline-start: 2rem;
+    padding-inline-end: 3rem;
+    display: inline-block;
+}
+
+.vaga-card .vaga-descricao {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+.vaga-card .vaga-status {
+    font-size: 1.1em;
+    margin-top: 5px;
+    padding-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.vaga-card .vaga-actions {
+    position: absolute;
+    bottom: -1.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px; /* Espaçamento entre os ícones */
+}
+
+.vaga-card .vaga-actions a .fa-edit{
+    color: rgba(0, 140, 255, 1);
+    font-size: 1.2em;
+}
+.vaga-card .vaga-actions a .fa-trash{
+    color: rgba(220, 0, 0, 1);
+    font-size: 1.2em;
+}
+
+.vaga-card .vaga-actions a .fa-edit:hover {
+    color: rgba(0, 80, 255, 1);
+}
+.vaga-card .vaga-actions a .fa-trash:hover {
+    color: rgba(255, 10, 10, 1);
+}
+
+
+
+
+
+/* CSS para Vagas quando o usuário logado é um Funcionário */
+.vagas-container{
+    background-color: white;
+  }
+  
+  /* Estilos para os cards de vaga */
+  .vaga-card-usuarios {
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 2rem;
+    padding-bottom: 0rem; /* Espaço para os ícones de ação */
+    margin: 10px;
+    margin-bottom: 1.7rem; /* Espaço entre widgets das vagas */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 9.375rem; /* Largura fixa para os cards (150px) */
+    display: inline-block; /* Para que os cards fiquem lado a lado */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    /*box-shadow: 2px 2px 5px rgba(0,0,0,0.2);*/
+    position: relative; /* Para posicionamento dos ícones */
+    min-height: 9.375rem; /* Altura mínima para o card (120px) */
+    height: 9.375rem; /* Altura fixa para o card (162.3px) */
+    max-height: 9.375rem; /* Altura máxima para o card (162.3px) */
+    vertical-align: top; /* Alinha os cards ao topo */
+  }
+  .vaga-card-usuarios:hover {
+      /*box-shadow: 4px 4px 10px rgba(0,0,0,0.3); /* Sombra mais intensa ao passar o mouse */
+      transform: scale(1.02); /* Leve aumento de tamanho ao passar o mouse */
+  }
+  
+  .vaga-card-usuarios.inativa {
+      background-color: rgba(0, 0, 0, 1); /* Verde claro */
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+      /*background-color: rgba(128, 128, 128, 1); /* Cinza */
+      /* Hexadecimal: #808080 / RGBA: rgba(128, 128, 128, 1) */
+  }
+      .vaga-card-usuarios.inativa .vaga-status {
+          color: rgba(128, 128, 128, 1) !important;
+      }
+          .vaga-card-usuarios.inativa:hover {
+              box-shadow: 0px 0px 10px rgba(255, 255, 255, 1); /* Sombra mais intensa ao passar o mouse */
+          }
+  
+  .vaga-card-usuarios.livre {
+      background-color: rgba(0, 0, 0, 1); /* Verde claro */
+      box-shadow: 0px 0px 10px rgba(144, 238, 144, 1);
+      /*background-color: rgba(144, 238, 144, 1); /* Verde claro */
+      /* Hexadecimal: #90EE90 / RGBA: rgba(144, 238, 144, 1) */
+  }
+      .vaga-card-usuarios.livre .vaga-status {
+          color: rgba(144, 238, 144, 1) !important;
+      }
+          .vaga-card-usuarios.livre:hover {
+              box-shadow: 0px 0px 10px rgba(144, 238, 144, 1); /* Sombra mais intensa ao passar o mouse */
+          }
+  
+  .vaga-card-usuarios.ocupada {
+      background-color: rgba(0, 0, 0, 1); /* Verde claro */
+      box-shadow: 0px 0px 10px rgba(220, 20, 60, 1);
+      /*background-color: rgba(220, 20, 60, 1); /* Vermelho */
+      /* Hexadecimal: #DC143C / RGBA: rgba(220, 20, 60, 1) */
+  }
+      .vaga-card-usuarios.ocupada .vaga-status {
+          color: rgba(220, 20, 60, 1) !important;
+      }
+          .vaga-card-usuarios.ocupada:hover {
+              box-shadow: 0px 0px 10px rgba(220, 20, 60, 1); /* Sombra mais intensa ao passar o mouse */
+          }
+  
+  .vaga-card-usuarios .vaga-id {
+      font-size: 1em;
+      margin-bottom: 10px;
+  
+      padding:  0px 0px;
+      display: inline-block;
+  }
+  
+  .vaga-card-usuarios .vaga-descricao {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: inline-block;
+  }
+  
+  .vaga-card-usuarios .vaga-status {
+      font-size: 1.1em;
+      margin-top: 5px;
+      padding-bottom: 1em;
+      text-transform: uppercase;
+  }
+  
+  .vaga-card-usuarios .vaga-actions {
+      position: absolute;
+      bottom: -1.7rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 20px; /* Espaçamento entre os ícones */
+  }
+  
+  .vaga-card-usuarios .vaga-actions a .fa-edit{
+      color: rgba(0, 140, 255, 1);
+      font-size: 1.2em;
+  }
+  .vaga-card-usuarios .vaga-actions a .fa-trash{
+      color: rgba(220, 0, 0, 1);
+      font-size: 1.2em;
+  }
+  
+  .vaga-card-usuarios .vaga-actions a .fa-edit:hover {
+      color: rgba(0, 80, 255, 1);
+  }
+  .vaga-card-usuarios .vaga-actions a .fa-trash:hover {
+      color: rgba(255, 10, 10, 1);
+  }

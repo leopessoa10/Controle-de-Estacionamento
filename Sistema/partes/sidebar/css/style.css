@@ -1,0 +1,145 @@
+/* Sidebar Logo */
+img {
+    vertical-align: middle;
+    border-style: none; }
+
+@media print {
+    *,
+    *::before,
+    *::after {
+        text-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important; }
+    a:not(.btn) {
+        text-decoration: underline; }
+    abbr[title]::after {
+        content: " (" attr(title) ")"; }
+    pre {
+        white-space: pre-wrap !important; }
+    pre,
+    blockquote {
+        border: 1px solid #adb5bd;
+        page-break-inside: avoid; }
+    thead {
+        display: table-header-group; }
+    tr,
+    img {
+        page-break-inside: avoid; }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3; }
+    h2,
+    h3 {
+        page-break-after: avoid; }
+    @page {
+        size: a3; }
+    body {
+        min-width: 992px !important; }
+    .container {
+        min-width: 992px !important; }
+    .navbar {
+        display: none;
+        border-bottom: none !important;
+        box-shadow: none !important; }
+    .content-wrapper {
+        border-top: none !important;
+        margin-top: 0 !important;
+    }
+    .badge {
+        border: 1px solid #000; }
+    .table {
+        border-collapse: collapse !important; }
+        .table td,
+        .table th {
+        background-color: #fff !important; }
+    .table-bordered th,
+    .table-bordered td {
+        border: 1px solid #dee2e6 !important; }
+    .table-dark {
+        color: inherit; }
+        .table-dark th,
+        .table-dark td,
+        .table-dark thead th,
+        .table-dark tbody + tbody {
+        border-color: #dee2e6; }
+    .table .thead-dark th {
+        color: inherit;
+        border-color: #dee2e6; } }
+
+.img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
+
+.bg-wrap {
+    width: 100%;
+    position: relative;
+    z-index: 0; }
+    .bg-wrap:after {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        background: #000;
+        opacity: .3; }
+    .bg-wrap .user-logo .img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-bottom: 10px; }
+    .bg-wrap .user-logo h3 {
+        color: #fff;
+        font-size: 18px; }
+
+.text-center {
+    text-align: center !important; }
+
+.py-4 {
+    padding-top: 1.5rem !important; }
+
+.py-4 {
+    padding-bottom: 1.5rem !important; }
+
+/* /.sidebar logo */
+
+/* Sidebar Menu - old */
+.list-unstyled {
+    padding-left: 0;
+    list-style: none; }
+
+#sidebar ul.components {
+    padding: 0; }   
+
+.mb-5 {
+    margin-bottom: 3rem !important; }
+/* /.sidebar menu - old */
+
+/* Sidebar Menu styles */
+.sidebar-style {
+    background: rgba(0, 0, 0, 0.6) !important; }
+
+    .sidebar-style i {
+        color: #007bff; }
+
+/* Background das opções principais selecionadas no menu da sidebar (opção Perfil e Administrador) */
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active,
+.sidebar-light-primary .nav-sidebar > .nav-item > .nav-link.active {
+    background-color: rgb(255, 255, 255, 0.24) !important;
+    color: #fff !important;
+}
+/* Background da tela das opções secundárias no menu da sidebar */
+[class*="sidebar-dark-"] .nav-item.menu-open {
+    background-color: rgba(255, 255, 255, 0.04) !important;
+    border-radius: 2%;
+}
+/* Background das opções secundárias selecionadas no menu da sidebar */
+[class*="sidebar-dark-"] .nav-link.active {
+    background-color: rgb(255, 255, 255, 0.18) !important;
+    color: #fff !important;
+}
